@@ -62,8 +62,8 @@
         //│          │          │          │  (       │  [       │   │ ]        │ )        │          │          │' "       │
             &trans    &trans     &trans    &ht LALT LPAR &kp LBKT      &kp RBKT &ht RALT RPAR  &trans    &trans  &ht RCTRL SQT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ ESC      │          │ LEFT     │ RIGHT    │ Esc      │   │ Enter    │ UP       │ DOWN     │          │ \ |      │
-          &ht LSHIFT ESC  &trans  &kp LEFT   &kp RIGHT   &kp ESC        &kp ENTER  &kp UP     &kp DOWN  &trans     &ht RSHIFT BSLH
+        //│ ` ~      │          │ LEFT     │ RIGHT    │ Esc      │   │ Enter    │ UP       │ DOWN     │          │ \ |      │
+          &ht LSHIFT GRAVE &trans  &kp LEFT   &kp RIGHT   &kp ESC      &kp ENTER  &kp UP     &kp DOWN  &trans     &ht RSHIFT BSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans    &lt 2 DEL         &trans   &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -79,8 +79,8 @@
         //│          │          │          │          │  END     │   │ PAGE DOWN│          │          │          │          │
             &trans    &trans     &trans     &trans     &kp END       &kp PG_DN   &trans     &trans     &trans     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  ` ~     │          │          │          │          │   │  ENTER   │          │          │          │          │
-           &kp GRAVE   &trans     &trans     &trans     &trans         &kp ENTER   &trans    &trans     &trans     &trans
+        //│  ESC     │          │          │          │          │   │  ENTER   │          │          │          │          │
+          &ht LSHIFT ESC  &trans   &trans     &trans     &trans         &kp ENTER   &trans    &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
