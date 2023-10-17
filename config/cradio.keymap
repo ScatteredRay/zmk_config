@@ -11,6 +11,10 @@
 #define BRML(k1,k2,k3,k4,k5) &ht LSHIFT k1  &kp k2  &kp k3  &kp k4  &kp k5
 #define BRMR(k1,k2,k3,k4,k5) &kp k1  &kp k2  &kp k3  &kp k4  &ht RSHIFT k5
 
+&lt {
+    flavor = "hold-preferred";
+};
+
 / {
     behaviors {
         ht: hold_tap {
