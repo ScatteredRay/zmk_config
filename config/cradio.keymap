@@ -64,7 +64,7 @@
         //│ ESC      │          │ LEFT     │ RIGHT    │ Esc      │   │ Enter    │ UP       │ DOWN     │          │ \ |      │
           &ht LSHIFT ESC  &trans  &kp LEFT   &kp RIGHT   &kp ESC        &kp ENTER  &kp UP     &kp DOWN  &trans     &ht RSHIFT BSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans         &trans     &trans
+                                             &trans    &lt 2 DEL         &trans   &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
