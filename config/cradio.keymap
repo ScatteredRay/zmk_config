@@ -36,6 +36,10 @@
             if-layers = <1 2>;
             then-layer = <4>;
         };
+        kbc2_layer {
+            if-layers = <2 3>;
+            then-layer = <4>;
+        };
     };
 
     keymap {
@@ -69,7 +73,7 @@
         //│ ` ~      │          │ LEFT     │ RIGHT    │ Esc      │   │ Enter    │ UP       │ DOWN     │          │ \ |      │
           &ht LSHIFT GRAVE &trans  &kp LEFT   &kp RIGHT   &kp ESC      &kp ENTER  &kp UP     &kp DOWN  &trans     &ht RSHIFT BSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans    &lt 2 DEL         &trans   &trans
+                                             &trans    &lt 2 DEL         &trans   &lt 2 ENTER
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
