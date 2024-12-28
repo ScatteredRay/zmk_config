@@ -361,7 +361,7 @@
  &trans     &trans  &trans  &trans  &trans  &trans                                                     &trans  &trans  &trans  &trans  &trans  &trans
  &trans    &kp TAB   &kp Q   &kp W   &kp E   &kp R                                                     &trans  &trans  &trans  &trans  &trans  &trans
  &trans  &kp LCTRL   &kp A   &kp S   &kp D   &kp F                                                     &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &kp LSHFT   &kp Z   &kp X   &kp C   &kp V     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &kp LSHFT   &kp Z   &kp X   &kp C   &kp V     &trans  &trans  &trans  &trans  &trans  &trans  &kp B   &trans  &trans  &trans  &trans  &trans
  &trans     &trans  &trans  &trans  &trans          &kp SPACE  &trans   &kp B  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
