@@ -60,10 +60,32 @@
             bindings
                 = <&rgb_ug RGB_STATUS>;
         };
+        gb_screenshot_macro: gb_screenshot_macro {
+            label = "GAMEBAR_SCREENSHOT";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI &kp LALT>
+                , <&macro_tap &kp PRINTSCREEN>
+                , <&macro_release &kp LGUI &kp LALT>
+                ;
+        };
+        gb_clipm_macro: gb_clip_macro {
+            label = "GAMEBAR_SCREENSHOT";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI &kp LALT>
+                , <&macro_tap &kp G>
+                , <&macro_release &kp LGUI &kp LALT>
+                ;
+        };
     };
 };
 
 #define rgbstat &rgb_ug_status_macro
+#define gb_clip &kp LG(LA(G))
+#define gb_screenshot &kp LG(LA(PRINTSCREEN))
 
 
 / {
@@ -271,7 +293,7 @@
 
 #define MYEAR YEAR_KEYS(2,4)
 #define MMON MON_KEYS(O,C,T)
-#define MVER VER_KEYS(0,3)
+#define MVER VER_KEYS(0,5)
 
 /* Custom Defined Behaviors */
 / {
@@ -324,10 +346,10 @@
 
         layer_Nav {
             bindings = <
- &ver    &trans  &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans  &ver
- &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  rgbstat                                                  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &to 4                                                  &trans  &trans  &trans   &to 2  &trans  &trans
+ &ver    &trans  &trans  &trans  &trans                                                          &trans  &trans  &trans  &trans  &ver
+ &trans  &trans  &trans  &trans  gb_clip gb_screenshot                                           &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  rgbstat                                                 &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &to 4                                                   &trans  &trans  &trans   &to 2  &trans  &trans
  &trans  &to 2   &trans  &trans  &to 3   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &to 3  &trans  &trans   &to 2  &trans
  &trans  &to 4   &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans   &to 4  &trans
             >;
