@@ -293,7 +293,7 @@
 
 #define MYEAR YEAR_KEYS(2,5)
 #define MMON MON_KEYS(J,A,N)
-#define MVER VER_KEYS(0,1)
+#define MVER VER_KEYS(0,2)
 
 /* Custom Defined Behaviors */
 / {

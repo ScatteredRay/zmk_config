@@ -15,13 +15,15 @@ in rec {
     kconfig = ./config/cradio.conf;
   };
 
-  glove80_left = zmk.glove80_left.override {
+  glove80_left = zmk.zmk.override {
+    board = "glove80_lh";
     keymap = ./config/glove80.keymap;
   };
 
-  glove80_right = zmk.glove80_right.override {
+  glove80_right = zmk.zmk.override {
+    board = "glove80_rh";
     keymap = ./config/glove80.keymap;
   };
 
-  glove80_combined = zmk.combine_uf2 glove80_left glove80_right;
+  glove80_combined = zmk.combine_uf2 glove80_left glove80_right "glove80";
 }
