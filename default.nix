@@ -1,6 +1,5 @@
-let
-  zmk = (import ../zmk) {};
-in rec {
+{ zmk ? (import ../zmk {}) }:
+rec {
   cradio_left = zmk.zmk.override {
     shield = "cradio_left";
     board = "nice_nano_v2";
@@ -26,4 +25,5 @@ in rec {
   };
 
   glove80_combined = zmk.combine_uf2 glove80_left glove80_right "glove80";
+  default = glove80_combined;
 }
