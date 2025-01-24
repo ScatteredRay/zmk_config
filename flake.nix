@@ -17,7 +17,7 @@
       };
     in {
       packages.x86_64-linux = (pkgs.callPackage ./default.nix {
-        inherit zmk;
+        inherit pkgs zmk;
       });
       devShells.x86_64-linux.default = pkgs.mkShell {
         shellHook = ''

@@ -1,4 +1,7 @@
-{ zmk ? (import ../zmk {}) }:
+{
+  pkgs,
+  zmk,
+}:
 rec {
   cradio_left = zmk.zmk.override {
     shield = "cradio_left";
@@ -27,5 +30,12 @@ rec {
   };
 
   glove80_combined = zmk.combine_uf2 glove80_left glove80_right "glove80";
-  default = glove80_combined;
+
+  collect_uf2 = a: b: pkgs.runCommandNoCC "collect_${a.name}_${b.name}" {} ''
+    mkdir -p $out
+    cp ${a}/*.uf2 $out
+    cp ${b}/*.uf2 $out
+  '';
+
+  default = collect_uf2 cradio_combined glove80_combined;
 }
