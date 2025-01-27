@@ -3,7 +3,7 @@
 VENDOR_ID="239a"
 PRODUCT_ID="0029"
 BLK_ID="Adafruit_nRF_UF2_GLV80"
-UF2_BIN="combined/glove80.uf2"
+UF2_BIN="result/glove80.uf2"
 MNT_PATH="/mnt/usb"
 
 ID="$VENDOR_ID:$PRODUCT_ID"
