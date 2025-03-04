@@ -25,8 +25,8 @@
 #define VER_KEYS(n1, n2) &kp N##n1 &kp N##n2
 
 #define MYEAR YEAR_KEYS(2,5)
-#define MMON MON_KEYS(J,A,N)
-#define MVER VER_KEYS(0,3)
+#define MMON MON_KEYS(M,A,R)
+#define MVER VER_KEYS(0,1)
 
 /* Automatically generated layer name #define */
 #define LAYER_Base 0
@@ -350,7 +350,7 @@
  &trans  &trans  &trans  &trans  gb_clip gb_screenshot                                             &trans  &trans  &trans  &trans  &trans  &trans
  &trans  &trans  &trans  &trans  &trans  rgbstat                                                   &trans  &trans  &trans  &trans  &trans  &trans
  &trans  &trans  &trans  &trans  &trans  &to 4                                                     &trans  &trans  &trans   &to 2  &trans  &trans
- &trans  &to 2   &trans  &trans  &to 3   &trans  &trans  &trans  &trans  &kp HOME  &trans  &trans  &trans   &to 3  &trans  &trans   &to 2  &trans
+ &trans  &to 2   &trans  &trans  &trans  &sl 3   &trans  &trans  &trans  &kp HOME  &trans  &trans  &sl 3   &trans  &trans  &trans   &to 2  &trans
  &trans  &to 4   &trans  &trans  &trans          &trans  &trans  &trans  &kp END   &trans  &trans          &trans  &trans  &trans   &to 4  &trans
             >;
         };
