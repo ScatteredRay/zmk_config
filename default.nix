@@ -58,9 +58,30 @@ rec {
   glove80_right = zmk.override {
     board = "glove80_rh";
     keymap = ./config/glove80.keymap;
+    snippets = [
+      #"zmk-usb-logging"
+    ];
   };
 
   glove80_combined = combine_uf2 glove80_left glove80_right "glove80";
 
-  default = collect_uf2 cradio_combined glove80_combined;
+  go60_left = zmk.override {
+    board = "go60_lh";
+    keymap = ./config/go60.keymap;
+    snippets = [
+      #"zmk-usb-logging"
+    ];
+  };
+
+  go60_right = zmk.override {
+    board = "go60_rh";
+    keymap = ./config/go60.keymap;
+    snippets = [
+      #"zmk-usb-logging"
+    ];
+  };
+
+  go60_combined = combine_uf2 go60_left go60_right "go60";
+
+  default = collect_uf2 cradio_combined glove80_combined go60_combined;
 }

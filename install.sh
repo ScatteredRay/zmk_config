@@ -8,6 +8,13 @@ case $1 in
         BLK_ID="Adafruit_nRF_UF2_GLV80"
         UF2_BIN="result/glove80.uf2"
         ;;
+    "-go60")
+        echo "Go60"
+        VENDOR_ID="239a"
+        PRODUCT_ID="0029"
+        BLK_ID="Adafruit_nRF_UF2_GO60"
+        UF2_BIN="result/go60.uf2"
+        ;;
     "-l")
         echo "Cradio Left"
         VENDOR_ID="239a"
