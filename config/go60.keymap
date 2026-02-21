@@ -37,7 +37,7 @@
 
 #define MYEAR YEAR_KEYS(2,6)
 #define MMON MON_KEYS(F,E,B)
-#define MVER VER_KEYS(0,1)
+#define MVER VER_KEYS(0,2)
 
 /* On demand includes */
 
@@ -73,6 +73,10 @@
 /* Input Listeners */
 &cirque_lh_listener {
     input-processors = <&zip_xy_to_scroll_mapper>, <&zip_click_to_right_click_mapper>, <&zip_scroll_scaler 1 8>;
+};
+
+&cirque_rh_listener {
+    input-processors = <&zip_xy_scaler 3 1>;
 };
 
 
