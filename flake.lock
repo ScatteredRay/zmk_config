@@ -25,16 +25,16 @@
     "zmk-moergo": {
       "flake": false,
       "locked": {
-        "lastModified": 1738014080,
-        "narHash": "sha256-a2NHheOsVjLzEEx7vaRp0wYg17GcjlWAYm6nxFKmj7E=",
-        "owner": "scatteredray",
+        "lastModified": 1764160494,
+        "narHash": "sha256-drM6YecXmSTNCePxXyD6Tfl9UKwDpjYjq+/h/Bq4oLA=",
+        "owner": "moergo-sc",
         "repo": "zmk",
-        "rev": "119a4fbb852221e0a2fb8c3f3c4c97516098897e",
+        "rev": "11454d23596afbdb06380a1125371b19ab65675c",
         "type": "github"
       },
       "original": {
-        "owner": "scatteredray",
-        "ref": "zmk-update",
+        "owner": "moergo-sc",
+        "ref": "main",
         "repo": "zmk",
         "type": "github"
       }

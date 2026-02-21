@@ -2,8 +2,9 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=566e53c2ad750c84f6d31f9ccb9d00f823165550";
     zmk-moergo = {
+      url = "github:moergo-sc/zmk?ref=main";
       #url = "github:moergo-sc/zmk?ref=zmk-update";
-      url = "github:scatteredray/zmk?ref=zmk-update";
+      #url = "github:scatteredray/zmk?ref=zmk-update";
       flake = false;
     };
   };

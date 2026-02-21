@@ -25,7 +25,7 @@
 #define VER_KEYS(n1, n2) &kp N##n1 &kp N##n2
 
 #define MYEAR YEAR_KEYS(2,6)
-#define MMON MON_KEYS(J,A,N)
+#define MMON MON_KEYS(F,E,B)
 #define MVER VER_KEYS(0,1)
 
 /* Automatically generated layer name #define */
